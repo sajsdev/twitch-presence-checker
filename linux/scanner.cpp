@@ -51,7 +51,7 @@ bool get_user_in_chat(const std::vector<std::string> &a, const std::string &b){
             std::string time_string{std::asctime(std::localtime(&now))};
             time_string.pop_back();
             std::cout << std::setw(30);
-            std::cout << std::left << time_string << " " << b.substr(1,5) + " is in " + i + "'s chatroom." << std::endl;
+            std::cout << std::left << time_string << " " << b + " is in " + i + "'s chatroom." << std::endl;
         }
         
         in_file.close();
