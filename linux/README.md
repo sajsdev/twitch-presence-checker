@@ -26,7 +26,9 @@ in this case
 ./tracker.exe
 ```
 if you do it right, the tracker should look like this:
+----
 ![tracker](https://cdn.discordapp.com/attachments/948676856364806187/955158033300848640/unknown.png "tracker")
 
 and the scanner should look like this:
+----
 ![scanner](https://media.discordapp.net/attachments/948676856364806187/955159998864982046/unknown.png "scanner")
