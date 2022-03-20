@@ -54,10 +54,10 @@ bool get_user_in_chat(const std::vector<std::string> &a, const std::string &b, s
 
         if (founded && !join_quit.at(pos)){
             std::cout << std::setw(30);
-            std::cout << std::left << time_string << " " << b.substr(1,5) + " joined " + i + "'s chatroom." << std::endl;
+            std::cout << std::left << time_string << " " << b + " joined " + i + "'s chatroom." << std::endl;
         }else if (!founded && join_quit.at(pos)){
             std::cout << std::setw(30);
-            std::cout << std::left << time_string << " " << b.substr(1, 5) << " Left " << i << "'s chatroom." << std::endl;
+            std::cout << std::left << time_string << " " << b << " Left " << i << "'s chatroom." << std::endl;
         }
 
         in_file.close();
