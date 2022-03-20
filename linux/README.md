@@ -8,7 +8,7 @@
     const std::string user{"mizkif"};
     const std::vector<std::string> check_list{"xqcow", "emiru", "dareon, "syn4ack"};
     
-2). compile the cpp file
+4). compile the cpp file
 ```
 ```bash
 g++ <cpp file> -o <output name>
@@ -17,7 +17,7 @@ for example:
 ```bash
 g++ tracker.cpp -o tracker.exe
 ```
-run the program
+5). run the program
 ```bash
 ./filename.exe
 ```
