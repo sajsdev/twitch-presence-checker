@@ -20,6 +20,8 @@ g++ tracker.cpp -o tracker.exe
 run the program
 ```bash
 ./filename.exe
+```
 in this case
+```bash
 ./tracker.exe
 ```
