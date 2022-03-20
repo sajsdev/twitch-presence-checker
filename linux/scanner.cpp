@@ -9,9 +9,9 @@ bool get_user_in_chat(const std::vector<std::string> &a, const std::string &b);
 
 int main(){
     const std::string user{};                   // Change this value to twitch specific username you want to check their precense in scan_list's chatroom (lowercase)
-    const std::vector<std::string> scan_list{}; // Change this value to target's chatroom (username)(lowercase)
+    const std::vector<std::string> check_list{}; // Change this value to target's chatroom (username)(lowercase)
 
-    if (!get_user_in_chat(scan_list, user)){
+    if (!get_user_in_chat(check_list, user)){
         return 1;
     }
 
