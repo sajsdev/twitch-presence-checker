@@ -5,8 +5,8 @@
 3). Change the value of variable check_list to target username's chatroom (lowercase)
     for example if you want to check if mizkif is in xqcow, emiru, dareon, and syn4ack, the variable should look like this
     
-    const std::string user{"mizkif"};
-    const std::vector<std::string> check_list{"xqcow", "emiru", "dareon, "syn4ack"};
+    const std::string user{"\"mizkif\""};
+    const std::vector<std::string> check_list{"mizkif", "emiru", "erobb221", "syn4ack"};
     
 4). compile the cpp file
 ```
