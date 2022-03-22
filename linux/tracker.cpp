@@ -24,6 +24,7 @@ int main(){
 bool get_user_in_chat(const std::vector<std::string> &a, const std::string &b, std::vector<bool> &join_quit){
     
     std::ifstream in_file;
+    std::ofstream out_file {"logs.txt", std::ios::app};
     size_t pos{};
     for (std::string i : a){
         
@@ -53,9 +54,11 @@ bool get_user_in_chat(const std::vector<std::string> &a, const std::string &b, s
         time_string.pop_back();
 
         if (founded && !join_quit.at(pos)){
+            out_file << std::setw(30) << std::left << time_string << " " << b + " joined " + i + "'s chatroom." << std::endl;
             std::cout << std::setw(30);
             std::cout << std::left << time_string << " " << b + " joined " + i + "'s chatroom." << std::endl;
         }else if (!founded && join_quit.at(pos)){
+            out_file << std::setw(30) << std::left << time_string << " " << b << " Left " << i << "'s chatroom." << std::endl;
             std::cout << std::setw(30);
             std::cout << std::left << time_string << " " << b << " Left " << i << "'s chatroom." << std::endl;
         }
@@ -65,6 +68,6 @@ bool get_user_in_chat(const std::vector<std::string> &a, const std::string &b, s
         join_quit.at(pos) = founded;
         pos++;
     }
-    
+    out_file.close();
     return true;
 }
