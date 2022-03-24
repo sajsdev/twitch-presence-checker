@@ -3,7 +3,7 @@
 1). build-essential package
 2). Change the value of variable user to twitch specific username you want to check their precense in check_list's chatroom (lowercase)
 3). Change the value of variable check_list to target username's chatroom (lowercase)
-    for example if you want to check if mizkif is in xqcow, emiru, dareon, and syn4ack, the variable should look like this
+    for example if you want to check if mizkif is in mizkif, emiru, erobb221, and syn4ack, the variable should look like this
     
     const std::string user{"\"mizkif\""};
     const std::vector<std::string> check_list{"mizkif", "emiru", "erobb221", "syn4ack"};
