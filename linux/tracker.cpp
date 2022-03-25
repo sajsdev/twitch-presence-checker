@@ -14,9 +14,9 @@ void add_user_in_check_list(std::vector<std::string> &check_list,const std::stri
 int main(){
     const std::string user{};                     //Change this value to twitch specific username you want to check their precense in check_list's chatroom (lowercase)
     const std::vector<std::string> check_list{};  //Change this value to target username's chatroom (lowercase)
-    std::vector<bool> join_quit(check_list.size(), 0);
     
     add_user_in_check_list(check_list, user);
+    std::vector<bool> join_quit(check_list.size(), 0);
     
     while (true)
     {
